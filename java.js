@@ -196,7 +196,7 @@ if(document.getElementById('0').innerHTML == "X" && document.getElementById('1')
 {
   winner = 2;
 playerX =  playerX + 1;
-
+document.getElementById('text0').innerHTML = "Player X won!"
 document.getElementById('text1').style.transition = "2s";
  document.getElementById('text1').innerHTML = "Player X:" + " " + playerX;
   reset();
@@ -222,6 +222,7 @@ if(document.getElementById('0').innerHTML == "O" && document.getElementById('1')
 {
 
 playerO = playerO + 1;
+document.getElementById('text0').innerHTML = "Player O won!"
  document.getElementById('text2').innerHTML = "Player O:" + " " + playerO;
    winner = 2;
   reset();
@@ -233,7 +234,7 @@ playerO = playerO + 1;
 function draw () {
   if (turn == 9 && winner == 0)
   {
-    alert("Draw guys!");
+      document.getElementById('text0').innerHTML = "Draw guys!"
       reset();
   }
   }
@@ -257,8 +258,8 @@ function resetForButton () {
   document.getElementById('6').disabled = false;
   document.getElementById('7').disabled = false;
   document.getElementById('8').disabled = false;
-  document.getElementById('text1').innerHTML = "Player X: 0";
-  document.getElementById('text2').innerHTML = "Player O: 0";
+
+  document.getElementById('text0').innerHTML = "Who is the best?"
 player = 1;
  turn = 0;
   winner = 0;
@@ -285,6 +286,8 @@ function reset () {
   document.getElementById('6').disabled = true;
   document.getElementById('7').disabled = true;
   document.getElementById('8').disabled = true;
+
+
 
 }
 
