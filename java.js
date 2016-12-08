@@ -287,8 +287,6 @@ function reset () {
   document.getElementById('7').disabled = true;
   document.getElementById('8').disabled = true;
 
-
-
 }
 
 
