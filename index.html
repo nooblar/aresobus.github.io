@@ -1,82 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-          <link rel="stylesheet" type="text/css" href="main.css">
-          <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-
-  <title>About me</title>
+  <title>My TicTacToe</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+  <script src="java.js"></script>
 </head>
-<video id="myVideo" src="computer.mp4" autoplay="1" loop="1"></video>
-<header>
-                <nav id="topnav">
-                      <ul>
-                                  <li><a href="google.com"> HOME</li></a>
-                                  <li><a href="#"> PORTFOLIO</li></a>
-                                  <li><a href="#"> ABOUT</li></a>
-                                  <li><a href="#"> RESUME</li></a>
-                                  <li><a href="#"> BLOG</li></a>
-                                  <li><input id="contact" type="button" value="CONTACT"><a href="#"></li></a>
-                      </ul>
-
-                </nav>
-
-</header>
-
 <body>
-
-<div id="container">
-
-
-
-   <h1>Live, travel, adventure,<br> bless, and don't be sorry. </h1>
+<video src="video.mp4"  width="100%" height="800px" autoplay="1" loop="1"></video>
 
 
 
+  <div class="grid" id="gridContainer">
 
-          <div id="afterContainer">
-                <h3>There is some placeholder for content</h3>
-<p>Schizophrenia is a severe mental disorder in which people interpret reality abnormally. Schizophrenia may result in some combination of hallucinations, delusions, and extremely disordered thinking and behavior that impairs daily functioning, and can be disabling.
+<p id="text">Score</p>
+<p id="text1">Player X: 0</p>
+<p id="text2">Player O: 0</p>
+    <button class="myButton" onclick="clicked(this.id)" id="0"> </button>
+    <button class="myButton" onclick="clicked1(this.id)" id="1"> </button>
+    <button class="myButton" onclick="clicked2(this.id)" id="2"> </button>
+    <button class="myButton" onclick="clicked3(this.id)" id="3"> </button>
+    <button class="myButton" onclick="clicked4(this.id)" id="4"> </button>
+    <button class="myButton" onclick="clicked5(this.id)" id="5"> </button>
+    <button class="myButton" onclick="clicked6(this.id)" id="6"> </button>
+    <button class="myButton" onclick="clicked7(this.id)" id="7"> </button>
+    <button class="myButton" onclick="clicked8(this.id)" id="8"> </button>
+    <button id="newGame" onclick="resetForButton ()">New Game!</button>
+  </div>
 
-Schizophrenia is a chronic condition, requiring lifelong treatment.
 
-</p>
-          </div>
 
-        <div id="afterContainer1">
-          <h3>My latest projects</h3>
-          <p> There's something to be said about working with passionate business owners
-          that truly love what they do. I’m no different. I started my education and work because I honestly enjoy coming
-          to work every day to create something beautiful that has the ability to impact others.</p>
-
-        </div>
-        <div id="imgdiv">
-        <img src="img1.jpg"  height="500"  width="420">
-            <img src="img2.jpg" height="500"  width="420">
-            <img src="img3.jpg"  height="500"  width="420">
-            </div>
-
-</div>
-
-<script type="text/javascript">
-  document.getElementById("myVideo").playbackRate = 0.7;
-</script>
+</html>
 
 </body>
-<footer>
-
-  <ul id="ul2">
-  <li>aresobus@gmail.com</li>
-  <br>
-      <li>+1(347) 777-00-83</li>
-    <a href="https://www.facebook.com/"><li><img src="facebook.png" height="28" width="28"></li></a>
-    <a href="https://www.twitter.com/"><li><img src="twitter.png" height="28" width="28"></li></a>
-    <a href="https://www.instagram.com/"><li><img src="insta.png" height="28" width="28"></li></a>
-    <a href="https://www.linkedin.com/"><li><img src="link.png" height="28" width="28"></li></a>
-
-  </ul>
-
-  <h2> &copy;2016 Alex Lebedyev. All right reserved</h2>
-
-</footer>
 </html>
+
