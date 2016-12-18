@@ -1,144 +1,205 @@
-
 body {
-background-color: black;
-  overflow-x: hidden;
-  font-family: 'Frijole', cursive;
-margin:  0px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Slackey', cursive;
+}
+
+
+
+.position img {
+    height: 64px;
+    width: 64px;
 }
 
 video {
-  position: absolute;
-  z-index: -1;
-top:  0;
-left: 0;
-bottom: 0;
-right: 0;
-
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
 }
 
-  .grid {
-    position: absolute;
-     margin-left: 35%;
-    text-align: center;
-    margin-top: 100px;
+    #img0 {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        position: absolute;
+        background-color: transparent;
+        width: 64px;
+        height: 64px;
+        background-image: url('wall1.gif');
+        left:  1100px;
+        top:  200px;
+    }
+
+    #img1 {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        position: absolute;
+        background-color: transparent;
+        width: 64px;
+        height: 64px;
+        background-image: url('wall1.gif');
+        left:  200px;
+        top:  650px;
+
+    }
+
+    #img2 {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        position: absolute;
+        background-color: transparent;
+          width: 64px;
+        height: 64px;
+        background-image: url('wall1.gif');
+        top:  80px;
+        left:  430px;
+
+
+
+
+    }
+    #img3 {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        position: absolute;
+        background-color: transparent;
+        width: 64px;
+        height: 64px;
+        background-image: url('wall1.gif');
+        top:  500px;
+        left:  630px;
+
+
+
+    }
+    #img4 {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        position: absolute;
+        background-color: transparent;
+         width: 64px;
+        height: 64px;
+        background-image: url('wall1.gif');
+        top:  700px;
+        left: 900px;
+    }
+
+    #img5 {
+        transition: opacity 1s ease-out;
+        opacity: 1;
+        position: absolute;
+        background-color: transparent;
+        width: 64px;
+        height: 64px;
+        background-image: url('wall1.gif');
+        top:  270px;
+        left: 100px;
+    }
+
+#game {
     position: relative;
-    width: 400px;
-    height: 400px;
+    opacity: 1;
+    margin-top: -35px;
+}
 
-
-  }
-  .myButton {
-    font-family: 'Frijole', cursive;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 95px;
-    height: 95px;
-    border-radius: 20px;
-    background-color: transparent;
-    font-size: 40px;
+#countdown {
+    position: absolute;
+    top:  5%;
+    left: 200px;
+    z-index: 2;
+    color: white;
+    font-size: 45px;
+    left: 50%;
     color: grey;
-    border:  3px solid;
-    border-color: #ff0015;
+    display: none;
+    font-size: 55px;
+}
+
+#button1 {
+    position: absolute;
+    z-index: 1;
+    top:  20%;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    font-family: 'Slackey', cursive;
     outline: none;
- vertical-align: top;
- cursor: pointer;
-  }
+    border-radius: 100px;
+    background-color: transparent;
+    color: grey;
+    display: none;
+    border-color: grey;
+    cursor: pointer;
+    height: 60px;
+    width: 150px;
+    left: 85%;
+    font-size: 20px;
+    top: 8%;
+}
 
-
-  #text, #text1, #text2 {
-color: grey;
-font-size: 25px;
-transition:  all ease-in-out 2s;
-
+#button1:hover {
+    position: absolute;
+    z-index: 1;
+    top:  20%;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    font-family: 'Slackey', cursive;
+    outline: none;
+    border-radius: 100px;
+    background-color: grey;
+    color: silver;
+    cursor: pointer;
+    height: 60px;
+    width: 150px;
+    left: 85%;
+    font-size: 20px;
+    top: 8%;
 }
 
 #text {
-  font-size: 35px;
+   position: absolute;
+    color: grey;
+    z-index: 1;
+    top:  15%;
+   font-size: 55px;
+   left: 45%;
+   top: 10%;
 }
 
+#hint{
+    color: grey;
+    position: absolute;
+    z-index: 1;
+    top:  25%;
+     left: 37%;
+    top: 20%;
+    font-size: 30px;
 
-#text0 {
-
-  color: grey;
-font-size: 25px;
-transition:  all ease-in-out 2s;
-}
-#text1, #text2 {
-  display: inline;
-
-}
-
-#text1:hover {
-  display: inline;
-  color:  #ff0015;
-text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-cursor: pointer;
-  transition:         transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }
 
-#text2:hover {
-  cursor: pointer;
-  color:  #ff0015;
-  display: inline;
-text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+#hint1{
+    color: grey;
+    position: absolute;
+    z-index: 1;
+    top:  18%;
+    left: 45%;
+    display: none;
+    font-size: 100px;
 
-  transition:         transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }
 
-#text0:hover {
-  cursor: pointer;
-  color:  #ff0015;
+#hint2{
+    color: grey;
+    position: absolute;
+    z-index: 1;
+    top:  18%;
+    left: 37%;
+    display: none;
+    font-size: 100px;
 
-text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-
-  transition:         transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
-}
-
-
-#text:hover {
-  cursor: pointer;
-color:  #ff0015;
-text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-  transform: rotateY(-180deg);
-  transition:         transform 5s cubic-bezier(0, 0.75, 0, 1), text-shadow 5s ease-out;
-}
-
-
-
-#text1 {
-  padding-right: 10px;
-}
-
-#newGame {
-  font-family: 'Frijole', cursive;
-  height: 80px;
-  width: 200px;
-  background-color: transparent;
-   border-color: #ff0015;
-  color: grey;
-  font-size: 25px;
-  border-radius: 80px;
-  outline: none;
-   cursor: pointer;
-   margin-top: 20px;
-}
-
-.myButton:hover{
-  border-color: grey;
-  color:  #ff0015;
-
-text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-  transform: rotateY(-180deg);
-  transition:  transform 0.9s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.9s ease-out;
-}
-
-#newGame:hover {
-    border-color: grey;
-  color:  #ff0015;
-  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-
-  transition:  transform 0.9s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.9s ease-out;
 }
 
